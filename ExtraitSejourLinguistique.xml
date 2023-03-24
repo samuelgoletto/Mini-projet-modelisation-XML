@@ -125,7 +125,7 @@
     </sejours>
     <disponibilites>
         <disponibilite>
-            <sejour>AAAAA</sejour>
+            <sejour-id>AAAAA</sejour-id>
             <date-debut>2022-07-03</date-debut>
             <date-fin>2022-07-07</date-fin>
             <places>9</places>
@@ -136,7 +136,7 @@
             </intervenants>
         </disponibilite>
         <disponibilite>
-            <sejour>AAAAA</sejour>
+            <sejour-id>AAAAA</sejour-id>
             <date-debut>2018-07-10</date-debut>
             <date-fin>2018-07-14</date-fin>
             <places>14</places>
@@ -147,7 +147,7 @@
             </intervenants>
         </disponibilite>
         <disponibilite>
-            <sejour>AAAAB</sejour>
+            <sejour-id>AAAAB</sejour-id>
             <date-debut>2018-05-15</date-debut>
             <date-fin>2018-05-21</date-fin>
             <places>21</places>
@@ -157,7 +157,7 @@
             </intervenants>
         </disponibilite>
         <disponibilite>
-            <sejour>AAAAC</sejour>
+            <sejour-id>AAAAC</sejour-id>
             <date-debut>2018-06-05</date-debut>
             <date-fin>2018-05-08</date-fin>
             <places>1</places>
@@ -166,7 +166,7 @@
             </intervenants>
         </disponibilite>
         <disponibilite>
-            <sejour>AAAAC</sejour>
+            <sejour-id>AAAAC</sejour-id>
             <date-debut>2018-06-09</date-debut>
             <date-fin>2018-05-12</date-fin>
             <places>1</places>
