@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sejours-linguistiques>
     <sejours>
-        <sejour type="colonie de vacances">
+        <sejour id="lsd">
+            <type>Colonie de Vacances</type>
             <nom>Colo 12-15 ans d'une semaine à Berlin</nom>
             <public>enfants</public>
             <langues>
@@ -23,20 +24,6 @@
                     <duree-quotidienne>1h</duree-quotidienne>
                 </cours>
             </cours-de-langue>
-            <tests-de-niveau>
-                <test>
-                    <langue>anglais</langue>
-                    <type>oral</type>
-                    <niveau>intermédiaire</niveau>
-                    <jour>5</jour>
-                </test>
-                <test>
-                    <langue>allemand</langue>
-                    <type>oral</type>
-                    <niveau>débutant</niveau>
-                    <jour>5</jour>
-                </test>
-            </tests-de-niveau>
             <activites>
                 <activite type="culturelle">
                     <nom>Visite du Reichstag</nom>
@@ -55,39 +42,87 @@
                     <jour>4</jour>
                 </activite>
             </activites>
-            <disponibilites>
-                <disponibilite>
-                    <date-debut>2022-07-03</date-debut>
-                    <date-fin>2022-07-07</date-fin>
-                    <places>9</places>
-                </disponibilite>
-                <disponibilite>
-                    <date-debut>2018-07-10</date-debut>
-                    <date-fin>2018-07-14</date-fin>
-                    <places>14</places>
-                </disponibilite>
-            </disponibilites>
-            <prix>1 200 €</prix>
-            <accompagnateurs>
-                <accompagnateur>
-                    <nom>Paul</nom>
-                    <prenom>Smith</prenom>
-                    <age>30</age>
-                    <langues>
-                        <langue>anglais</langue>
-                        <langue>allemand</langue>
-                    </langues>
-                </accompagnateur>
-                <accompagnateur>
-                    <nom>John</nom>
-                    <prenom>Smith</prenom>
-                    <age>31</age>
-                    <langues>
-                        <langue>anglais</langue>
-                        <langue>allemand</langue>
-                    </langues>
-                </accompagnateur>
-            </accompagnateurs>
+            <prix currency="€">1_200</prix>
+        </sejour>
+
+        <sejour id="lsd2">
+            <type>Groupe Scolaire</type>
+            <nom>Pour que les enfants ne connaissent jamais de vacances</nom>
+            <public>enfants</public>
+            <langues>
+                <langue>russe</langue>
+            </langues>
+            <destination>Moscow</destination>
+            <cours-de-langue>
+                <cours langue="russe">
+                    <type>groupe</type>
+                    <niveau>intermédiaire</niveau>
+                    <duree-quotidienne>2h</duree-quotidienne>
+                </cours>
+            </cours-de-langue>
+            <tests-de-niveau>
+                <test>
+                    <langue>russe</langue>
+                    <type>oral</type>
+                    <niveau>debutant</niveau>
+                    <jour>5</jour>
+                </test>
+                <test>
+                    <langue>russe</langue>
+                    <type>ecrit</type>
+                    <niveau>débutant</niveau>
+                    <jour>5</jour>
+                </test>
+            </tests-de-niveau>
+            <activites>
+                <activite type="nationaliste">
+                    <nom>Visite d'un Goulag</nom>
+                    <jour>1-5</jour>
+                </activite>
+            </activites>
+            <prix currency="€">1_200</prix>
         </sejour>
     </sejours>
+    <disponibilites>
+        <disponibilite>
+            <sejour>lsd</sejour>
+            <date-debut>2022-07-03</date-debut>
+            <date-fin>2022-07-07</date-fin>
+            <places>9</places>
+            <intervenants>
+                <intervenant id="00001" />
+                <intervenant id="00002" />
+            </intervenants>
+        </disponibilite>
+        <disponibilite>
+            <date-debut>2018-07-10</date-debut>
+            <date-fin>2018-07-14</date-fin>
+            <places>14</places>
+            <intervenants>
+                <intervenant id="00001" />
+            </intervenants>
+        </disponibilite>
+    </disponibilites>
+    <intervenant>
+        <intervenant id="00001">
+            <role>accompagnateur</role>
+            <nom>Paul</nom>
+            <prenom>Smith</prenom>
+            <age>30</age>
+            <langues>
+                <langue>anglais</langue>
+                <langue>allemand</langue>
+            </langues>
+        </intervenant>
+        <intervenant id="00002">
+            <role>enseignant</role>
+            <nom>John</nom>
+            <prenom>Smith</prenom>
+            <age>31</age>
+            <langues>
+                <langue>anglais</langue>
+                <langue>allemand</langue>
+            </langues>
+        </intervenant>
+    </intervenant>
 </sejours-linguistiques>
