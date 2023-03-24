@@ -156,25 +156,21 @@
         </disponibilite>
         <disponibilite>
             <sejour>AAAAC</sejour>
-            <date-debut>2018-05-15</date-debut>
-            <date-fin>2018-05-21</date-fin>
-            <places>21</places>
-            <intervenants>
-                <intervenant id="00004" />
-                <intervenant id="00005" />
-            </intervenants>
-        </disponibilite>
-        <disponibilite>
-            <sejour>AAAAC</sejour>
             <date-debut>2018-06-5</date-debut>
             <date-fin>2018-05-8</date-fin>
             <places>1</places>
+            <intervenants>
+                <intervenant id="00006" />
+            </intervenants>
         </disponibilite>
         <disponibilite>
             <sejour>AAAAC</sejour>
             <date-debut>2018-06-9</date-debut>
             <date-fin>2018-05-12</date-fin>
             <places>1</places>
+            <intervenants>
+                <intervenant id="00006" />
+            </intervenants>
         </disponibilite>
     </disponibilites>
     <intervenant>
@@ -225,6 +221,15 @@
             <age>41</age>
             <langues>
                 <langue>russe</langue>
+            </langues>
+        </intervenant>
+        <intervenant id="00006">
+            <role>enseignant</role>
+            <nom>Jones</nom>
+            <prenom>Abby</prenom>
+            <age>36</age>
+            <langues>
+                <langue>anglais</langue>
             </langues>
         </intervenant>
     </intervenant>
