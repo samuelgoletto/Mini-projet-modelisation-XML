@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sejours-linguistiques>
+    <sejours>
+        <sejour type="colonie de vacances">
+            <nom>Colo 12-15 ans d'une semaine à Berlin</nom>
+            <public>enfants</public>
+            <langues>
+                <langue>anglais</langue>
+                <langue>allemand</langue>
+            </langues>
+            <destination>Berlin</destination>
+            <cours-de-langue>
+                <cours>
+                    <langue>anglais</langue>
+                    <type>groupe</type>
+                    <niveau>intermédiaire</niveau>
+                    <duree-quotidienne>2h</duree-quotidienne>
+                </cours>
+                <cours>
+                    <langue>allemand</langue>
+                    <type>groupe</type>
+                    <niveau>débutant</niveau>
+                    <duree-quotidienne>1h</duree-quotidienne>
+                </cours>
+            </cours-de-langue>
+            <tests-de-niveau>
+                <test>
+                    <langue>anglais</langue>
+                    <type>oral</type>
+                    <niveau>intermédiaire</niveau>
+                    <jour>5</jour>
+                </test>
+                <test>
+                    <langue>allemand</langue>
+                    <type>oral</type>
+                    <niveau>débutant</niveau>
+                    <jour>5</jour>
+                </test>
+            </tests-de-niveau>
+            <activites>
+                <activite type="culturelle">
+                    <nom>Visite du Reichstag</nom>
+                    <jour>1</jour>
+                </activite>
+                <activite type="sportive">
+                    <nom>Match de football</nom>
+                    <jour>2</jour>
+                </activite>
+                <activite type="culturelle">
+                    <nom>Visite de la Porte de Brandebourg</nom>
+                    <jour>3</jour>
+                </activite>
+                <activite type="sportive">
+                    <nom>Balade en vélo</nom>
+                    <jour>4</jour>
+                </activite>
+            </activites>
+            <disponibilites>
+                <disponibilite>
+                    <date-debut>2022-07-03</date-debut>
+                    <date-fin>2022-07-07</date-fin>
+                    <places>9</places>
+                </disponibilite>
+                <disponibilite>
+                    <date-debut>2018-07-10</date-debut>
+                    <date-fin>2018-07-14</date-fin>
+                    <places>14</places>
+                </disponibilite>
+            </disponibilites>
+            <prix>1 200 €</prix>
+            <accompagnateurs>
+                <accompagnateur>
+                    <nom>Paul</nom>
+                    <prenom>Smith</prenom>
+                    <age>30</age>
+                    <langues>
+                        <langue>anglais</langue>
+                        <langue>allemand</langue>
+                    </langues>
+                </accompagnateur>
+                <accompagnateur>
+                    <nom>John</nom>
+                    <prenom>Smith</prenom>
+                    <age>31</age>
+                    <langues>
+                        <langue>anglais</langue>
+                        <langue>allemand</langue>
+                    </langues>
+                </accompagnateur>
+            </accompagnateurs>
+        </sejour>
+    </sejours>
+</sejours-linguistiques>
