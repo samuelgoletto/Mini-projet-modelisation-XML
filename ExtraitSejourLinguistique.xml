@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sejours-linguistiques>
     <sejours>
-        <sejour id="lsd">
+        <sejour id="AAAAA">
             <type>Colonie de Vacances</type>
             <nom>Colo 12-15 ans d'une semaine à Berlin</nom>
             <public>enfants</public>
@@ -42,72 +42,146 @@
                     <jour>4</jour>
                 </activite>
             </activites>
-            <prix currency="€">1_200</prix>
+            <prix currency="€">1400</prix>
         </sejour>
-
-        <sejour id="lsd2">
+        <sejour id="AAAAB">
             <type>Groupe Scolaire</type>
-            <nom>Pour que les enfants ne connaissent jamais de vacances</nom>
+            <nom>Voyage en Russie</nom>
             <public>enfants</public>
             <langues>
                 <langue>russe</langue>
             </langues>
-            <destination>Moscow</destination>
+            <destination>Moscou</destination>
             <cours-de-langue>
                 <cours langue="russe">
                     <type>groupe</type>
                     <niveau>intermédiaire</niveau>
-                    <duree-quotidienne>2h</duree-quotidienne>
+                    <duree-quotidienne>4h</duree-quotidienne>
                 </cours>
             </cours-de-langue>
             <tests-de-niveau>
                 <test>
                     <langue>russe</langue>
                     <type>oral</type>
-                    <niveau>debutant</niveau>
-                    <jour>5</jour>
+                    <niveau>intermédiaire</niveau>
+                    <jour>6</jour>
                 </test>
                 <test>
                     <langue>russe</langue>
                     <type>ecrit</type>
-                    <niveau>débutant</niveau>
-                    <jour>5</jour>
+                    <niveau>intermédiaire</niveau>
+                    <jour>7</jour>
                 </test>
             </tests-de-niveau>
             <activites>
-                <activite type="nationaliste">
-                    <nom>Visite d'un Goulag</nom>
-                    <jour>1-5</jour>
+                <activite type="culturelle">
+                    <nom>Visite du Kremlin</nom>
+                    <jour>2</jour>
+                </activite>
+                <activite type="sportive">
+                    <nom>Décpuverte du hockey</nom>
+                    <jour>5</jour>
                 </activite>
             </activites>
-            <prix currency="€">1_200</prix>
+            <prix currency="€">1600</prix>
+        </sejour>
+        <sejour id="AAAAC">
+            <type>Immersion en famille</type>
+            <nom>Immersion au coeur de Londres</nom>
+            <public>famille</public>
+            <langues>
+                <langue>anglais</langue>
+            </langues>
+            <destination>Londres</destination>
+            <cours-de-langue>
+                <cours langue="anglais">
+                    <type>individuel</type>
+                    <niveau>intermédiaire</niveau>
+                    <duree-quotidienne>2h</duree-quotidienne>
+                </cours>
+            </cours-de-langue>
+            <activites>
+                <activite type="culturelle">
+                    <nom>Visite de Big Ben</nom>
+                    <jour>1</jour>
+                </activite>
+                <activite type="culturelle">
+                    <nom>Visite du British Museum</nom>
+                    <jour>2</jour>
+                </activite>
+                <activite type="culturelle">
+                    <nom>Tour du London Eye</nom>
+                    <jour>2</jour>
+                </activite>
+                <activite type="culturelle">
+                    <nom>Visite de la Tour de Londres</nom>
+                    <jour>3</jour>
+                </activite>
+            </activites>
+            <prix currency="€">2300</prix>
         </sejour>
     </sejours>
     <disponibilites>
         <disponibilite>
-            <sejour>lsd</sejour>
+            <sejour>AAAAA</sejour>
             <date-debut>2022-07-03</date-debut>
             <date-fin>2022-07-07</date-fin>
             <places>9</places>
             <intervenants>
                 <intervenant id="00001" />
                 <intervenant id="00002" />
+                <intervenant id="00003" />
             </intervenants>
         </disponibilite>
         <disponibilite>
+            <sejour>AAAAA</sejour>
             <date-debut>2018-07-10</date-debut>
             <date-fin>2018-07-14</date-fin>
             <places>14</places>
             <intervenants>
                 <intervenant id="00001" />
+                <intervenant id="00002" />
+                <intervenant id="00003" />
             </intervenants>
+        </disponibilite>
+        <disponibilite>
+            <sejour>AAAAB</sejour>
+            <date-debut>2018-05-15</date-debut>
+            <date-fin>2018-05-21</date-fin>
+            <places>21</places>
+            <intervenants>
+                <intervenant id="00004" />
+                <intervenant id="00005" />
+            </intervenants>
+        </disponibilite>
+        <disponibilite>
+            <sejour>AAAAC</sejour>
+            <date-debut>2018-05-15</date-debut>
+            <date-fin>2018-05-21</date-fin>
+            <places>21</places>
+            <intervenants>
+                <intervenant id="00004" />
+                <intervenant id="00005" />
+            </intervenants>
+        </disponibilite>
+        <disponibilite>
+            <sejour>AAAAC</sejour>
+            <date-debut>2018-06-5</date-debut>
+            <date-fin>2018-05-8</date-fin>
+            <places>1</places>
+        </disponibilite>
+        <disponibilite>
+            <sejour>AAAAC</sejour>
+            <date-debut>2018-06-9</date-debut>
+            <date-fin>2018-05-12</date-fin>
+            <places>1</places>
         </disponibilite>
     </disponibilites>
     <intervenant>
         <intervenant id="00001">
             <role>accompagnateur</role>
-            <nom>Paul</nom>
-            <prenom>Smith</prenom>
+            <nom>Smith</nom>
+            <prenom>Paul</prenom>
             <age>30</age>
             <langues>
                 <langue>anglais</langue>
@@ -115,13 +189,42 @@
             </langues>
         </intervenant>
         <intervenant id="00002">
-            <role>enseignant</role>
-            <nom>John</nom>
-            <prenom>Smith</prenom>
+            <role>accompagnateur</role>
+            <nom>Smith</nom>
+            <prenom>John</prenom>
             <age>31</age>
             <langues>
                 <langue>anglais</langue>
                 <langue>allemand</langue>
+            </langues>
+        </intervenant>
+        <intervenant id="00003">
+            <role>enseignant</role>
+            <nom>Müller</nom>
+            <prenom>Peter</prenom>
+            <age>45</age>
+            <langues>
+                <langue>anglais</langue>
+                <langue>allemand</langue>
+            </langues>
+        </intervenant>
+        <intervenant id="00004">
+            <role>accompagnateur</role>
+            <nom>Martin</nom>
+            <prenom>Emilie</prenom>
+            <age>26</age>
+            <langues>
+                <langue>anglais</langue>
+                <langue>russe</langue>
+            </langues>
+        </intervenant>
+        <intervenant id="00005">
+            <role>enseignant</role>
+            <nom>Babitchev</nom>
+            <prenom>Nikolaï</prenom>
+            <age>41</age>
+            <langues>
+                <langue>russe</langue>
             </langues>
         </intervenant>
     </intervenant>
