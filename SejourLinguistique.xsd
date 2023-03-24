@@ -1,0 +1,144 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="sejours-linguistiques">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sejours">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sejour" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="type"/>
+                                        <xs:element type="xs:string" name="nom"/>
+                                        <xs:element type="xs:string" name="public"/>
+                                        <xs:element name="langues">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="langue" maxOccurs="unbounded" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="destination"/>
+                                        <xs:element name="cours-de-langue">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="cours" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="langue" minOccurs="0"/>
+                                                                <xs:element type="xs:string" name="type"/>
+                                                                <xs:element type="xs:string" name="niveau"/>
+                                                                <xs:element type="xs:string" name="duree-quotidienne"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:string" name="langue" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tests-de-niveau" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="test" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="langue"/>
+                                                                <xs:element type="xs:string" name="type"/>
+                                                                <xs:element type="xs:string" name="niveau"/>
+                                                                <xs:element type="xs:byte" name="jour"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="activites">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="activite" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="nom"/>
+                                                                <xs:element type="xs:string" name="jour"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="prix">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="currency" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="id" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="disponibilites">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="disponibilite" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="sejour" minOccurs="0"/>
+                                        <xs:element type="xs:date" name="date-debut"/>
+                                        <xs:element type="xs:date" name="date-fin"/>
+                                        <xs:element type="xs:byte" name="places"/>
+                                        <xs:element name="intervenants">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="intervenant" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="intervenant">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="intervenant" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="role"/>
+                                        <xs:element type="xs:string" name="nom"/>
+                                        <xs:element type="xs:string" name="prenom"/>
+                                        <xs:element type="xs:byte" name="age"/>
+                                        <xs:element name="langues">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="langue" maxOccurs="unbounded" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sejours-linguistiques>
+<?xml version="1.0" encoding="UTF-8" ?>
+<sejours-linguistiques
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="SejourLinguistique.xsd">
     <sejours>
         <sejour id="AAAAA">
             <type>Colonie de Vacances</type>
@@ -156,8 +158,8 @@
         </disponibilite>
         <disponibilite>
             <sejour>AAAAC</sejour>
-            <date-debut>2018-06-5</date-debut>
-            <date-fin>2018-05-8</date-fin>
+            <date-debut>2018-06-05</date-debut>
+            <date-fin>2018-05-08</date-fin>
             <places>1</places>
             <intervenants>
                 <intervenant id="00006" />
@@ -165,7 +167,7 @@
         </disponibilite>
         <disponibilite>
             <sejour>AAAAC</sejour>
-            <date-debut>2018-06-9</date-debut>
+            <date-debut>2018-06-09</date-debut>
             <date-fin>2018-05-12</date-fin>
             <places>1</places>
             <intervenants>
