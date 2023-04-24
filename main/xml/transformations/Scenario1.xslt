@@ -3,7 +3,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <link rel="stylesheet" type="text/css" href="output1.css"/>
+                <link rel="stylesheet" type="text/css" href="../output1.css"/>
                 <title>Sejours destinés aux enfants</title>
             </head>
             <body>
