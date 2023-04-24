@@ -114,7 +114,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="intervenant">
+                <xs:element name="intervenants">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="intervenant" maxOccurs="unbounded" minOccurs="0">

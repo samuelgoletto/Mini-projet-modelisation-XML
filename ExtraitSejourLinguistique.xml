@@ -175,7 +175,7 @@
             </intervenants>
         </disponibilite>
     </disponibilites>
-    <intervenant>
+    <intervenants>
         <intervenant id="00001">
             <role>accompagnateur</role>
             <nom>Smith</nom>
@@ -234,5 +234,5 @@
                 <langue>anglais</langue>
             </langues>
         </intervenant>
-    </intervenant>
+    </intervenants>
 </sejours-linguistiques>
