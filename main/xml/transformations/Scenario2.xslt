@@ -6,6 +6,7 @@
         <html>
             <head>
                 <title>Liste des intervenants parlant allemand</title>
+                <link rel="stylesheet" type="text/css" href="output1.css"/>
             </head>
             <body>
                 <h1>Liste des intervenants parlant allemand</h1>
